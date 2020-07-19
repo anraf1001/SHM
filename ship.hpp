@@ -10,6 +10,9 @@ public:
 
     void setName(const std::string& newName);
 
+    Ship& operator+=(const size_t num);
+    Ship& operator-=(const size_t num);
+
     int getId() const { return id_; }
     std::string getName() const { return name_; }
     size_t getSpeed() const { return speed_; }
@@ -17,10 +20,10 @@ public:
     size_t getCapacity() const { return capacity_; }
 
 private:
-    int id_;
+    const int id_;
     std::string name_;
     size_t speed_;
     size_t maxCrew_;
     size_t capacity_;
-    size_t crew_;
+    size_t crew_{};
 };

@@ -10,3 +10,13 @@ Ship::Ship() : Ship(-1, "", 0, 0, 0) {}
 void Ship::setName(const std::string& newName) {
     name_ = newName;
 }
+
+Ship& Ship::operator+=(const size_t num) {
+    crew_ += num;
+    return *this;
+}
+
+Ship& Ship::operator-=(const size_t num) {
+    crew_ -= num;
+    return *this;
+}
