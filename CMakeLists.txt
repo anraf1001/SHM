@@ -11,6 +11,7 @@ add_subdirectory(extern/googletest)
 set(FLAGS -Wall -Wextra -Werror -Wconversion -pedantic)
 
 set(SOURCES
+    cargo.cpp
     ship.cpp)
 
 set(TEST_SOURCES
