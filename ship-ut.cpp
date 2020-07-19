@@ -10,3 +10,11 @@ TEST(ShipTest, shouldFillSpecifiedParametersInShip) {
     EXPECT_EQ(ship.getMaxCrew(), 5);
     EXPECT_EQ(ship.getCapacity(), 7);
 }
+
+TEST(ShipTest, shouldSetName) {
+    Ship ship;
+
+    ship.setName("Ship");
+
+    EXPECT_EQ(ship.getName(), "Ship");
+}
