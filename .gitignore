@@ -1,0 +1,10 @@
+*
+!.clang-format
+!*/
+/.vscode
+/build
+!.gitignore
+!*.hpp
+!*.h
+!*.cpp
+!CMakeLists.txt
