@@ -8,6 +8,8 @@ public:
     Ship(int id, size_t speed, size_t maxCrew);
     Ship(int id, const std::string& name, size_t speed, size_t maxCrew, size_t capacity);
 
+    void setName(const std::string& newName);
+
     int getId() const { return id_; }
     std::string getName() const { return name_; }
     size_t getSpeed() const { return speed_; }
