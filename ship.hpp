@@ -18,6 +18,7 @@ public:
     size_t getSpeed() const { return speed_; }
     size_t getMaxCrew() const { return maxCrew_; }
     size_t getCapacity() const { return capacity_; }
+    size_t getCrew() const { return crew_; }
 
 private:
     const int id_;
