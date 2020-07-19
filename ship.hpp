@@ -22,4 +22,5 @@ private:
     size_t speed_;
     size_t maxCrew_;
     size_t capacity_;
+    size_t crew_;
 };
