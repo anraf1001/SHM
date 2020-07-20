@@ -9,15 +9,12 @@ on:
 jobs:
   ctest:
     runs-on: ubuntu-latest
-    
+
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
     - name: Create build folder
       run: mkdir build
-    - name: Update submodule
-      run: git submodule update --init
     - name: Compile
       working-directory: build
       run: |
