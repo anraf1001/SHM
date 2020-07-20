@@ -23,8 +23,8 @@ add_executable(${PROJECT_NAME} main.cpp)
 target_compile_options(${PROJECT_NAME} PRIVATE ${FLAGS})
 target_link_libraries(${PROJECT_NAME} ${PROJECT_NAME}-lib)
 
-add_executable(${PROJECT_NAME}-ut main-ut.cpp ${TEST_SOURCES})
+add_executable(${PROJECT_NAME}-ut ${TEST_SOURCES})
 target_compile_options(${PROJECT_NAME}-ut PRIVATE ${FLAGS})
-target_link_libraries(${PROJECT_NAME}-ut PUBLIC ${PROJECT_NAME}-lib gtest gmock)
+target_link_libraries(${PROJECT_NAME}-ut PUBLIC ${PROJECT_NAME}-lib gtest_main)
 
 add_test(NAME Test COMMAND ${PROJECT_NAME}-ut)
