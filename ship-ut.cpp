@@ -1,4 +1,5 @@
-#include "gtest/gtest.h"
+#include <gtest/gtest.h>
+
 #include "ship.hpp"
 
 TEST(ShipTest, shouldFillSpecifiedParametersInShip) {
