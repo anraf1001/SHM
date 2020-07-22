@@ -35,10 +35,14 @@ set(FLAGS -Wall -Wextra -Werror -Wconversion -pedantic)
 
 set(SOURCES
     cargo.cpp
+    coordinates.cpp
+    island.cpp
     ship.cpp)
 
 set(TEST_SOURCES
     cargo-ut.cpp
+    coordinates-ut.cpp
+    island-ut.cpp
     ship-ut.cpp)
 
 add_library(${PROJECT_NAME}-lib STATIC ${SOURCES})
