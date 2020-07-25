@@ -38,6 +38,7 @@ set(SOURCES
     coordinates.cpp
     island.cpp
     map.cpp
+    player.cpp
     ship.cpp)
 
 set(TEST_SOURCES
@@ -45,6 +46,7 @@ set(TEST_SOURCES
     coordinates-ut.cpp
     island-ut.cpp
     map-ut.cpp
+    player-ut.cpp
     ship-ut.cpp)
 
 add_library(${PROJECT_NAME}-lib STATIC ${SOURCES})
